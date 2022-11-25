@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the Footer component renders correctly 1`] = `
+<footer>
+  Copyright ©️ 2022
+  <a
+    href="https://github.com/mavericks-db"
+  >
+    mavericks-db
+  </a>
+</footer>
+`;
