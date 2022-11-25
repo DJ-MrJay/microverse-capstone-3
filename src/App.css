@@ -164,10 +164,6 @@ button {
   height: 100px;
 }
 
-.bottom {
-  padding: 3rem 1rem;
-}
-
 .statsContainer {
   display: flex;
   flex-direction: column;
@@ -250,5 +246,3 @@ form button {
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
-
-
