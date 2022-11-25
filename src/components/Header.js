@@ -7,6 +7,7 @@ import { MdKeyboardVoice } from 'react-icons/md';
 import { RiSettings2Fill } from 'react-icons/ri';
 import { useSelector } from 'react-redux';
 import pokeball from '../assets/pokeball.png';
+import pokemonLogo from '../assets/Pokémon_logo.png';
 
 function Header() {
   const pokemonList = useSelector((state) => state.preview);
@@ -56,8 +57,8 @@ function Header() {
     <>
       <section className="header">
         <div className="title">
-          <Link to="/" style={{ textDecoration: 'none' }}>
-            <h1 className="titleText" data-testid="title">POKEMON</h1>
+          <Link to="/">
+            <img src={pokemonLogo} alt="Pokémon Logo" className="original-logo" />
           </Link>
           <img className="logo" src={img} alt="" onMouseEnter={() => setShown(true)} onMouseLeave={() => setShown(false)} />
           {shown && <p>{name}</p>}
