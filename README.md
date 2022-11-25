@@ -2,7 +2,7 @@
 
 ![Pokémon Logo](Pokémon_logo.png)
 
-# Pokémon APP
+# Pokémon App
 
 > This is a web application to retrieve metrics from an API using React and Redux.
 > The requirements include selecting an API that provides numeric data about a topic and then building the web app around the topic. The web app should have:
@@ -45,7 +45,7 @@ $ npm install
 - GitHub [Link](https://github.com/DJ-MrJay)
 - Twitter [Link](https://twitter.com/jonah_wambua)
 - LinkedIn [Link](https://www.linkedin.com/in/mr-jay)
-- Wellfound [Link](https://angel.co/u/jonah-wambua))
+- Wellfound [Link](https://angel.co/u/jonah-wambua)
 
 ## Contributing
 Contributions, issues, and feature requests are welcome!
