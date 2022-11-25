@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Pokémon Logo](Pokémon_logo.png)
 
-## Available Scripts
+# Pokémon APP
 
-In the project directory, you can run:
+> This is a web application to retrieve metrics from an API using React and Redux.
+> The requirements include selecting an API that provides numeric data about a topic and then building the web app around the topic. The web app should have:
+> - a home page with a list of items
+> - another page for the item details
 
-### `npm start`
+## Learning Objectives
+- Use React documentation
+- Use React components
+- Use React props
+- Use React Router
+- Connect React and Redux
+- Handle events in a React app
+- Write integration tests with a React testing library
+- Use styles in a React app
+- Use React life cycle methods
+- Apply React best practices and language style guides in code
+- Use store, actions and reducers in React
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Project Presentation
+- [Video link]()
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Built With
+- Languages: HTML5, CSS3, JavaScript
+- Front-end library: React & Redux
+- API
 
-### `npm test`
+## Live Demo
+Live demo on [netlify]()
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
+To get a local copy up and running follow these steps
+- Clone the repository using the GitHub link provided below.
+- In your terminal, run: <code>git clone git@github.com:DJ-MrJay/microverse-capstone-3.git</code>
+- Run tests. Follow these [instructions](https://github.com/microverseinc/linters-config). A GitHub action is also set to run during pull request
+```
+$ npm install
+```
+## Author
+- GitHub [Link](https://github.com/DJ-MrJay)
+- Twitter [Link](https://twitter.com/jonah_wambua)
+- LinkedIn [Link](https://www.linkedin.com/in/mr-jay)
+- Wellfound [Link](https://angel.co/u/jonah-wambua))
 
-### `npm run build`
+## Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/DJ-MrJay/microverse-capstone-3/issues).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Show your support
+Give a ⭐️ if you like this project!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Acknowledgement
+Special thanks to [Nelson Sakwa on Behance](https://www.behance.net/gallery/31579789/Ballhead-App-%28Free-PSDs%29) for the original design idea.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is [MIT](./MIT.md) licensed.
