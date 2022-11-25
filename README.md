@@ -23,7 +23,7 @@
 - Use store, actions and reducers in React
 
 ## Project Presentation
-- [Video link]()
+- [Video link](https://www.loom.com/share/de9c94bfa0bc4c30a837434505cecb23)
 
 ## Built With
 - Languages: HTML5, CSS3, JavaScript
