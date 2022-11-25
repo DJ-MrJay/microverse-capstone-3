@@ -109,6 +109,15 @@ button {
   border: 1px solid #ca4075;
 }
 
+.box img {
+  width: 150px;
+}
+
+.box h2 {
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
 .box:last-of-type {
   width: 150px;
 }
