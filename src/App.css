@@ -131,7 +131,6 @@ button {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   bottom: 0;
   background-color: #ca4075;
   width: 100%;
@@ -213,6 +212,7 @@ form button {
   background-color: white;
   padding: 5px 1rem;
   border: 1px solid #ca4075;
+  cursor: pointer;
 }
 
 .gifPhotos {
