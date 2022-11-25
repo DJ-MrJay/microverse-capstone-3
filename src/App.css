@@ -146,6 +146,8 @@ button {
 .details-main {
   display: flex;
   padding: 3rem 1rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .homeBtn {
@@ -217,9 +219,10 @@ form button {
 
 .guessBox {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 2rem;
   height: 215px;
   color: white;
   position: relative;
