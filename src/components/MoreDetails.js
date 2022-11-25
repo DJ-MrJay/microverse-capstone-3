@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { IconContext } from 'react-icons';
 import { RiCloseCircleFill } from 'react-icons/ri';
-import './stylesheets/MoreDetails.scss';
 
 function MoreDetails() {
   const [shown, setShown] = useState(true);
@@ -61,32 +60,38 @@ function MoreDetails() {
           <ul className="statsContainer">
             <li className="property">
               {`${stat0}:`}
-              <span className="info">{statVal0}</span>
+              &nbsp;
+              {statVal0}
             </li>
             <li className="property">
               {`${stat1}:`}
-              <span className="info">{statVal1}</span>
+              &nbsp;
+              {statVal1}
             </li>
             <li className="property">
               {`${stat2}:`}
-              <span className="info">{statVal2}</span>
+              &nbsp;
+              {statVal2}
             </li>
             <li className="property">
               {`${stat3}:`}
-              <span className="info">{statVal3}</span>
+              &nbsp;
+              {statVal3}
             </li>
             <li className="property">
               {`${stat4}:`}
-              <span className="info">{statVal4}</span>
+              &nbsp;
+              {statVal4}
             </li>
             <li className="property">
               {`${stat5}:`}
-              <span className="info">{statVal5}</span>
+              &nbsp;
+              {statVal5}
             </li>
           </ul>
         </section>
       ) : (
-        <button type="button" onClick={() => setShown(true)}>
+        <button className="more-btn" type="button" onClick={() => setShown(true)}>
           More Details...
         </button>
       )}

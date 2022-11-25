@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import axios from 'axios';
-import './stylesheets/MainPreview.scss';
 import pokeball from '../assets/pokeball.png';
 
 function MainPreview() {

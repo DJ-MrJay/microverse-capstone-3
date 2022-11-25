@@ -4,7 +4,6 @@ import { fetchApi } from './redux/previewSlice';
 import Header from './Header';
 import Preview from './Preview';
 import MainPreview from './MainPreview';
-import './stylesheets/Home.scss';
 
 function Home() {
   const pokemons = useSelector((state) => state.preview);
@@ -18,7 +17,7 @@ function Home() {
     <>
       <Header />
       <MainPreview />
-      <h3>POKEMON BY ID</h3>
+      <h3 className="list-header">POKEMON BY ID</h3>
       <section className="list">
         {pokemons.map((pokemon) => (<Preview key={pokemon.id} pokemon={pokemon} />))}
       </section>

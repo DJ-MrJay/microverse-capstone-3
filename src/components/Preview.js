@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import axios from 'axios';
-import './stylesheets/Preview.scss';
 import Capitalize from './utils/Capitalize';
 import pokeball from '../assets/pokeball.png';
 
@@ -19,7 +18,7 @@ function Preview({ pokemon }) {
 
   return (
     <NavLink to={`/pokemon/details/${pokemon.id}`} className="box">
-      <div className="oval">
+      <div>
         <h1>
           {pokemon.id < 10 ? (`0${pokemon.id}`) : pokemon.id}
         </h1>

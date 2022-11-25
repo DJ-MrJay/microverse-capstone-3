@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer>
       Copyright ©️ 2022
-      <a href="https://github.com/mavericks-db">mavericks-db</a>
+      <a href="https://github.com/DJ-MrJay">Jonah Wambua</a>
     </footer>
   );
 }

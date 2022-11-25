@@ -5,8 +5,6 @@ import { IconContext } from 'react-icons';
 import { BsHouseFill } from 'react-icons/bs';
 import axios from 'axios';
 import { updateImg } from './redux/previewSlice';
-import './stylesheets/Details.scss';
-import Footer from './Footer';
 import MoreDetails from './MoreDetails';
 import pokeball from '../assets/pokeball.png';
 
@@ -50,20 +48,24 @@ function Details() {
   }, []);
 
   return (
-    <section className="details">
-      <div className="detailsContainer">
+    <section>
+      <div className="details-header">
         <h1>
           {pokemon.id < 10 ? (`0${pokemon.id}`) : pokemon.id}
         </h1>
-        <h2>
+        <h1>
           {pokemon.name}
-        </h2>
+        </h1>
         <NavLink to="/">
           <IconContext.Provider value={{ className: 'homeBtn' }}>
             <BsHouseFill />
           </IconContext.Provider>
         </NavLink>
-        <img src={img} alt="" />
+      </div>
+      <div className="details-main">
+        <div className="main-img">
+          <img src={img} alt="" />
+        </div>
         <div className="photos">
           <img src={img1} alt="" aria-hidden="true" onClick={() => setImg(img1)} />
           <img src={img2} alt="" aria-hidden="true" onClick={() => setImg(img2)} />
@@ -73,32 +75,33 @@ function Details() {
       <div className="bottom">
         <ul className="statsContainer">
           <li className="property">
-            Type:
-            <span className="info">{type1}</span>
+            Type:&nbsp;
+            {type1}
           </li>
+
           <li className="property">
-            Ability 01:
-            <span className="info">
-              {ability1}
-            </span>
+            Ability 01:&nbsp;
+            {ability1}
           </li>
+
           <li className="property">
-            Ability 02:
-            <span className="info">
-              {ability2 || null}
-            </span>
+            Ability 02:&nbsp;
+            {ability2 || null}
           </li>
+
           <li className="property">
-            Base Exp:
-            <span className="info">{pokemon.base_experience}</span>
+            Base Exp:&nbsp;
+            {pokemon.base_experience}
           </li>
+
           <li className="property">
-            Height:
-            <span className="info">{pokemon.height}</span>
+            Height:&nbsp;
+            {pokemon.height}
           </li>
+
           <li className="property">
-            Weight:
-            <span className="info">{pokemon.weight}</span>
+            Weight:&nbsp;
+            {pokemon.weight}
           </li>
         </ul>
         <div className="gifPhotos">
@@ -106,7 +109,6 @@ function Details() {
           { more ? (<MoreDetails id={pokemon.id} />) : (<button type="button" onClick={() => setMore(true)}>More Details...</button>)}
         </div>
       </div>
-      <Footer />
     </section>
   );
 }

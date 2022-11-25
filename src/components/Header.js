@@ -5,7 +5,6 @@ import { IconContext } from 'react-icons';
 import { BsSearch } from 'react-icons/bs';
 import { MdKeyboardVoice } from 'react-icons/md';
 import { RiSettings2Fill } from 'react-icons/ri';
-import './stylesheets/Header.scss';
 import { useSelector } from 'react-redux';
 import pokeball from '../assets/pokeball.png';
 
@@ -79,7 +78,7 @@ function Header() {
                 />
                 {focus && input ? (
                   <span className="searchResults">
-                    Best result:
+                    Best result:&nbsp;
                     {<NavLink to={`/pokemon/details/${search}`}>{ search }</NavLink> || null}
                   </span>
                 ) : null}
