@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react';
-// import userEvent from '@testing-library/user-event';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
@@ -28,11 +27,3 @@ describe('Test the Details component', () => {
     expect(buttonElement).toBeInTheDocument();
   });
 });
-
-// test('renders link', () => {
-//   render(<MockDetails />);
-//   userEvent.screen.getByRole('button', {
-//     name: /more details\.\.\./i
-//   });
-//   expect(screen.getByRole('button')).toBeInTheDocument();
-// });

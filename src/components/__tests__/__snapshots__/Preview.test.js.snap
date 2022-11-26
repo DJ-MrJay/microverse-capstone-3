@@ -6,9 +6,7 @@ exports[`Test the Preview component renders correctly 1`] = `
   href="/pokemon/details/1"
   onClick={[Function]}
 >
-  <div
-    className="oval"
-  >
+  <div>
     <h1>
       01
     </h1>

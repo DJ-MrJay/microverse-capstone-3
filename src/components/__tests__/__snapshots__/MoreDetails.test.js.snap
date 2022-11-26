@@ -42,49 +42,37 @@ exports[`Test the MoreDetails component renders correctly 1`] = `
       className="property"
     >
       undefined:
-      <span
-        className="info"
-      />
+       
     </li>
     <li
       className="property"
     >
       undefined:
-      <span
-        className="info"
-      />
+       
     </li>
     <li
       className="property"
     >
       undefined:
-      <span
-        className="info"
-      />
+       
     </li>
     <li
       className="property"
     >
       undefined:
-      <span
-        className="info"
-      />
+       
     </li>
     <li
       className="property"
     >
       undefined:
-      <span
-        className="info"
-      />
+       
     </li>
     <li
       className="property"
     >
       undefined:
-      <span
-        className="info"
-      />
+       
     </li>
   </ul>
 </section>

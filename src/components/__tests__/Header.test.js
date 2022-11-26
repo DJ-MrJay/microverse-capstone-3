@@ -19,13 +19,6 @@ describe('Test the Header component', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  test('should render the title', () => {
-    render(<MockHeader />);
-    const titleElement = screen.getByTestId('title');
-    expect(titleElement).toBeInTheDocument();
-    expect(titleElement).toHaveTextContent('POKEMON');
-  });
-
   test('should render the search icon', () => {
     render(<MockHeader />);
     const inputElement = screen.getByTestId('searchIcon');

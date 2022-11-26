@@ -11,18 +11,12 @@ Array [
       <a
         href="/"
         onClick={[Function]}
-        style={
-          Object {
-            "textDecoration": "none",
-          }
-        }
       >
-        <h1
-          className="titleText"
-          data-testid="title"
-        >
-          POKEMON
-        </h1>
+        <img
+          alt="Pokémon Logo"
+          className="original-logo"
+          src="Pokémon_logo.png"
+        />
       </a>
       <img
         alt=""
@@ -162,7 +156,9 @@ Array [
       </button>
     </form>
   </section>,
-  <h3>
+  <h3
+    className="list-header"
+  >
     POKEMON BY ID
   </h3>,
   <section

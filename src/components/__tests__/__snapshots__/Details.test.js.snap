@@ -1,14 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Test the Details component renders correctly 1`] = `
-<section
-  className="details"
->
+<section>
   <div
-    className="detailsContainer"
+    className="details-header"
   >
     <h1 />
-    <h2 />
+    <h1 />
     <a
       aria-current="page"
       className="active"
@@ -40,10 +38,18 @@ exports[`Test the Details component renders correctly 1`] = `
         />
       </svg>
     </a>
-    <img
-      alt=""
-      src="pokeball.png"
-    />
+  </div>
+  <div
+    className="details-main"
+  >
+    <div
+      className="main-img"
+    >
+      <img
+        alt=""
+        src="pokeball.png"
+      />
+    </div>
     <div
       className="photos"
     >
@@ -76,50 +82,32 @@ exports[`Test the Details component renders correctly 1`] = `
       <li
         className="property"
       >
-        Type:
-        <span
-          className="info"
-        />
+        Type: 
       </li>
       <li
         className="property"
       >
-        Ability 01:
-        <span
-          className="info"
-        />
+        Ability 01: 
       </li>
       <li
         className="property"
       >
-        Ability 02:
-        <span
-          className="info"
-        />
+        Ability 02: 
       </li>
       <li
         className="property"
       >
-        Base Exp:
-        <span
-          className="info"
-        />
+        Base Exp: 
       </li>
       <li
         className="property"
       >
-        Height:
-        <span
-          className="info"
-        />
+        Height: 
       </li>
       <li
         className="property"
       >
-        Weight:
-        <span
-          className="info"
-        />
+        Weight: 
       </li>
     </ul>
     <div
@@ -138,13 +126,5 @@ exports[`Test the Details component renders correctly 1`] = `
       </button>
     </div>
   </div>
-  <footer>
-    Copyright ©️ 2022
-    <a
-      href="https://github.com/mavericks-db"
-    >
-      mavericks-db
-    </a>
-  </footer>
 </section>
 `;
