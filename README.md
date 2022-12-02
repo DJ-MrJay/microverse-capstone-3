@@ -59,7 +59,6 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 - Live [Netlify Link](https://pokemon-web-app-by-mrjay.netlify.app/)
-- Live [Github Pages Link](https://dj-mrjay.github.io/microverse-capstone-3/)
 - [Video Demo Link](https://www.loom.com/share/de9c94bfa0bc4c30a837434505cecb23/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
