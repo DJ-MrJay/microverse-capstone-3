@@ -71,7 +71,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- a code editor e.g. [VS Code](https://code.visualstudio.com/)
+- a code editor e.g. [VS Code](https://code.visualstudio.com/) or [Cursor](https://cursor.com/)
 - a modern browser e.g. Chrome, Mozilla or Microsoft Edge
 
 ### Setup
