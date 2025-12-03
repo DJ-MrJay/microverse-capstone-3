@@ -4,17 +4,36 @@ import PropTypes from 'prop-types';
 import axios from 'axios';
 import Capitalize from './utils/Capitalize';
 import pokeball from '../assets/pokeball.png';
+import { POKEMON_ENDPOINT } from '../constants/api';
 
 function Preview({ pokemon }) {
   const [img, setImg] = useState(pokeball);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
+    // Skip if image already exists in pokemon object
+    if (pokemon.img) {
+      setImg(pokemon.img);
+      return;
+    }
+
     async function fetchData() {
-      const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemon.id}`);
-      setImg(response.data.sprites.other['official-artwork'].front_default);
+      setLoading(true);
+      setError(null);
+      try {
+        const response = await axios.get(`${POKEMON_ENDPOINT}/${pokemon.id}`);
+        setImg(response.data.sprites.other['official-artwork'].front_default);
+      } catch (err) {
+        console.error(`Failed to fetch Pokémon ${pokemon.id}:`, err);
+        setError(err.message);
+        // Keep default pokeball image on error
+      } finally {
+        setLoading(false);
+      }
     }
     fetchData();
-  });
+  }, [pokemon.id, pokemon.img]);
 
   return (
     <NavLink to={`/pokemon/details/${pokemon.id}`} className="box">
@@ -22,7 +41,11 @@ function Preview({ pokemon }) {
         <h1>
           {pokemon.id < 10 ? (`0${pokemon.id}`) : pokemon.id}
         </h1>
-        { pokemon.img ? (<img src={pokemon.img} alt="" />) : (<img src={img} alt="" />)}
+        {pokemon.img ? (
+          <img src={pokemon.img} alt={`${Capitalize(pokemon.name)} official artwork`} />
+        ) : (
+          <img src={img} alt={loading ? 'Loading...' : error ? 'Error loading image' : `${Capitalize(pokemon.name)} official artwork`} />
+        )}
         <h2>
           {Capitalize(pokemon.name)}
         </h2>

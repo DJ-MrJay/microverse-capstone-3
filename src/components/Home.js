@@ -6,21 +6,32 @@ import Preview from './Preview';
 import MainPreview from './MainPreview';
 
 function Home() {
-  const pokemons = useSelector((state) => state.preview);
+  const { pokemons, loading, error } = useSelector((state) => state.preview);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (!pokemons.length) dispatch(fetchApi());
-  });
+    if (!pokemons.length && !loading) dispatch(fetchApi());
+  }, [pokemons.length, loading, dispatch]);
 
   return (
     <>
       <Header />
       <MainPreview />
       <h3 className="list-header">POKEMON BY ID</h3>
-      <section className="list">
-        {pokemons.map((pokemon) => (<Preview key={pokemon.id} pokemon={pokemon} />))}
-      </section>
+      {loading && <p style={{ padding: '1rem', textAlign: 'center' }}>Loading Pokémon...</p>}
+      {error && (
+        <p style={{ padding: '1rem', textAlign: 'center', color: 'red' }}>
+          {error}
+          <button type="button" onClick={() => dispatch(fetchApi())} style={{ marginLeft: '1rem' }}>
+            Retry
+          </button>
+        </p>
+      )}
+      {!loading && !error && (
+        <section className="list">
+          {pokemons.map((pokemon) => (<Preview key={pokemon.id} pokemon={pokemon} />))}
+        </section>
+      )}
     </>
   );
 }
